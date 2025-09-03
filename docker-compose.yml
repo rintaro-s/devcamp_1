@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: ./Proger/frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Proger/frontend:/app
+      - /app/node_modules
+    environment:
+      - WATCHPACK_POLLING=true
+
+  backend:
+    build:
+      context: ./Proger/backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Proger/backend:/app

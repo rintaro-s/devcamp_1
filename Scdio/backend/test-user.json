@@ -1,0 +1,7 @@
+{
+  "username": "testuser",
+  "password": "testpass123",
+  "email": "test@example.com",
+  "enrollment_year": 2024,
+  "is_teacher": false
+}
